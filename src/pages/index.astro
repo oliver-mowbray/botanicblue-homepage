@@ -1,16 +1,424 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
+<BaseLayout title="Botanic Blue">
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-screen flex items-center pt-16">
+    <div class="container mx-auto px-4 py-20 hero-content text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Natural Awakening</h1>
+      <p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto">
+        Experience the power of nature-derived entheogens in tranquil, welcoming environments designed for healing, growth, and self-discovery.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+        <a href="#membership" class="btn-primary hover:shadow-lg">Become a Member</a>
+        <a href="#about" class="bg-transparent border-2 border-white text-white py-3 px-6 rounded-full hover:bg-white hover:text-[var(--color-dark)] transition duration-300">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <!-- About Section -->
+  <section id="about" class="py-20 relative overflow-hidden">
+    <div class="leaf-pattern"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-5">About Botanic Blue</h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+          We provide non-physically addictive psychoactive substances (entheogens) in welcoming environments designed for healing, introspection, and growth.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="card p-8 bg-white text-center">
+          <div class="w-16 h-16 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-leaf text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Natural Wellbeing</h3>
+          <p class="text-gray-600">Our ethically sourced entheogens promote healing and personal growth in safe, controlled environments.</p>
+        </div>
+        <div class="card p-8 bg-white text-center">
+          <div class="w-16 h-16 bg-[var(--color-secondary)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-brain text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Guided Experiences</h3>
+          <p class="text-gray-600">Experienced practitioners and medical professionals ensure safe and transformative journeys.</p>
+        </div>
+        <div class="card p-8 bg-white text-center">
+          <div class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-spa text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Tranquil Settings</h3>
+          <p class="text-gray-600">Our estate designs promote healing, from lush gardens to meditative spaces and circadian rhythm rooms.</p>
+        </div>
+      </div>
+      <div class="bg-[var(--color-dark)] text-white p-10 rounded-lg shadow-xl">
+        <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+        <p class="text-lg mb-6">
+          Botanic Blue aims to reconnect people with nature's wisdom through carefully selected entheogens that promote healing without addiction. We create spaces where personal growth and scientific exploration meet, offering alternatives to conventional pharmaceutical approaches to mental health.
+        </p>
+        <p class="text-lg">
+          With recent breakthroughs showing psilocybin's effectiveness in treating depression, we're at the forefront of a new paradigm in wellness and mental health care. Our estates provide not just substances but complete experiences designed to nurture mind, body, and spirit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 gradient-bg relative">
+    <div class="leaf-pattern"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-5">Our Offerings</h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+          We provide carefully selected entheogens in purposefully designed environments to maximize their beneficial effects.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-[var(--color-dark)]">Estate Experiences</h3>
+          <div class="space-y-6">
+            <div class="card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-2 text-[var(--color-primary)]">Gatehouse & Reception</h4>
+              <p class="text-gray-600 mb-3">Your journey begins at our welcoming reception area, where our knowledgeable staff will guide you through the experience and ensure all medical requirements are met.</p>
+            </div>
+            <div class="card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-2 text-[var(--color-primary)]">Garden Café Experience</h4>
+              <p class="text-gray-600 mb-3">Enjoy stimulating conversations in our lush garden café settings with flowing water features, abundant plant life, and occasional visits from friendly animals. The perfect environment for uplifting, euphoric experiences.</p>
+            </div>
+            <div class="card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-2 text-[var(--color-primary)]">Tranquility Dark Areas</h4>
+              <p class="text-gray-600 mb-3">Dedicated spaces for deep meditation and introspection, featuring sensory deprivation tanks, radioluminescent crystals, and bioluminescent mushrooms.</p>
+            </div>
+            <div class="card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-2 text-[var(--color-primary)]">Circadian Rhythm Rooms</h4>
+              <p class="text-gray-600 mb-3">Special accommodations designed to reset your natural sleep-wake cycle, combining entheogenic experiences with light therapy and natural settings.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-[var(--color-dark)]">Entheogen Selection</h3>
+          <div class="space-y-4">
+            <div class="entheogen-card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-1">Psilocybin Mushrooms</h4>
+              <p class="text-sm text-gray-500 mb-3">Therapeutic | Introspective | Healing</p>
+              <p class="text-gray-600">Clinically proven to help with depression, anxiety, and PTSD. Our guided psilocybin experiences provide profound insights and emotional healing.</p>
+            </div>
+            <div class="entheogen-card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-1">Kava</h4>
+              <p class="text-sm text-gray-500 mb-3">Relaxing | Social | Calming</p>
+              <p class="text-gray-600">A traditional Pacific Island beverage that promotes relaxation and sociability without impairing mental clarity.</p>
+            </div>
+            <div class="entheogen-card bg-white p-6">
+              <h4 class="text-xl font-semibold mb-1">Sacred Blue Lily</h4>
+              <p class="text-sm text-gray-500 mb-3">Euphoric | Meditative | Historical</p>
+              <p class="text-gray-600">Used in ancient ceremonies, this subtle entheogen promotes a gentle euphoria and enhances meditative states.</p>
+            </div>
+            <!-- Ayahuasca entry removed -->
+            <div class="text-center mt-4">
+              <p class="text-gray-600 italic">And many more carefully selected natural entheogens, all legally approved and administered under appropriate supervision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4 text-center text-[var(--color-dark)]">Additional Offerings</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
+              <i class="fas fa-pen-nib text-white"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Reflection Tools</h4>
+            <p class="text-gray-600">Free writing implements for documenting insights during your experience.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
+              <i class="fas fa-users text-white"></i>
+            </div>
+            <h4 class="font-semibold mb-2">Community Events</h4>
+            <p class="text-gray-600">STEM gatherings and educational workshops at our larger estates.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
+              <i class="fas fa-vr-cardboard text-white"></i>
+            </div>
+            <h4 class="font-semibold mb-2">AR Experiences</h4>
+            <p class="text-gray-600">Cooperative augmented reality experiences available at select locations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section id="locations" class="py-20 relative">
+    <div class="leaf-pattern"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-5">Our Locations</h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+          From intimate café-style settings to expansive estate experiences, our locations immerse you in natural beauty.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div class="card bg-white overflow-hidden">
+          <div class="location-img" style="background-image: url('https://cdn.jsdelivr.net/gh/placeholder-image/garden/800x500')"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Winery-Style Estates</h3>
+            <p class="text-gray-600 mb-4">Our largest locations offer the complete Botanic Blue experience—with extensive gardens, meditation spaces, and overnight accommodations.</p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Full-service entheogen offerings</li>
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Overnight accommodations</li>
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> AR experiences and community events</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card bg-white overflow-hidden">
+          <div class="location-img" style="background-image: url('https://cdn.jsdelivr.net/gh/placeholder-image/cafe/800x500')"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Café-Style Locations</h3>
+            <p class="text-gray-600 mb-4">Intimate urban retreats offering select entheogenic experiences in cozy, plant-filled environments.</p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Select entheogen menu</li>
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Urban accessibility</li>
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Ideal for shorter visits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card bg-white overflow-hidden">
+          <div class="location-img" style="background-image: url('https://cdn.jsdelivr.net/gh/placeholder-image/space/800x500')"></div>
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Future Lunar Estate</h3>
+            <p class="text-gray-600 mb-4">Our visionary project will create the ultimate Botanic Blue experience in a lunar setting, blending entheogens with space exploration.</p>
+            <ul class="text-gray-600 space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Unique zero-gravity experiences</li>
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Experimental terraforming projects</li>
+              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Premium journey package</li>
+            </ul>
+            <div class="mt-4">
+              <span class="text-sm bg-[var(--color-accent)] text-[var(--color-dark)] px-3 py-1 rounded-full font-medium">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="text-gray-600 mb-6">All locations are staffed with qualified professionals and comply with local regulations.</p>
+        <a href="#contact" class="btn-primary inline-block">Inquire About Locations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section id="membership" class="py-20 gradient-bg relative">
+    <div class="leaf-pattern"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-5">Become a Member</h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+          Due to our personalized services and medical requirements, Botanic Blue operates on a membership basis.
+        </p>
+      </div>
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-8 md:p-12">
+              <h3 class="text-2xl font-semibold mb-4 text-[var(--color-dark)]">Membership Benefits</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-leaf text-[var(--color-secondary)] mt-1 mr-3"></i>
+                  <div>
+                    <h4 class="font-semibold">Access All Locations</h4>
+                    <p class="text-gray-600">Visit any Botanic Blue facility worldwide with your membership.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-user-md text-[var(--color-secondary)] mt-1 mr-3"></i>
+                  <div>
+                    <h4 class="font-semibold">Personalized Consultations</h4>
+                    <p class="text-gray-600">Work with our experts to tailor experiences to your needs and medical history.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-calendar-alt text-[var(--color-secondary)] mt-1 mr-3"></i>
+                  <div>
+                    <h4 class="font-semibold">Priority Booking</h4>
+                    <p class="text-gray-600">Reserve sessions and accommodations ahead of public release.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-flask text-[var(--color-secondary)] mt-1 mr-3"></i>
+                  <div>
+                    <h4 class="font-semibold">Research Participation</h4>
+                    <p class="text-gray-600">Join groundbreaking research on the benefits of natural entheogens.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-[var(--color-primary)] text-white p-8 md:p-12">
+              <h3 class="text-2xl font-semibold mb-4">Membership Process</h3>
+              <ol class="space-y-6">
+                <li class="flex items-start">
+                  <div class="w-8 h-8 rounded-full bg-white text-[var(--color-primary)] flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                  <div>
+                    <h4 class="font-semibold text-xl">Application</h4>
+                    <p>Complete our application form with your wellness goals and medical background.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-8 h-8 rounded-full bg-white text-[var(--color-primary)] flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                  <div>
+                    <h4 class="font-semibold text-xl">Medical Review</h4>
+                    <p>Our team reviews your health information to ensure safe, appropriate experiences.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-8 h-8 rounded-full bg-white text-[var(--color-primary)] flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                  <div>
+                    <h4 class="font-semibold text-xl">Orientation</h4>
+                    <p>Attend an orientation to learn about our offerings and protocols.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-8 h-8 rounded-full bg-white text-[var(--color-primary)] flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                  <div>
+                    <h4 class="font-semibold text-xl">Membership Activation</h4>
+                    <p>Receive your credentials and begin scheduling your Botanic Blue experiences.</p>
+                  </div>
+                </li>
+              </ol>
+              <div class="mt-8">
+                <a href="#contact" class="bg-white text-[var(--color-primary)] py-3 px-6 rounded-full font-semibold hover:bg-opacity-90 transition duration-300 inline-block">Apply Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4 text-center text-[var(--color-dark)]">Medical Requirements</h3>
+          <p class="text-gray-600 mb-6 text-center">
+            For your safety, we require medical information from all members.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="font-semibold text-lg mb-3 text-[var(--color-primary)]">Required Information</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center"><i class="fas fa-clipboard-list text-[var(--color-secondary)] mr-2"></i> Medical history</li>
+                <li class="flex items-center"><i class="fas fa-pills text-[var(--color-secondary)] mr-2"></i> Current medications</li>
+                <li class="flex items-center"><i class="fas fa-allergy text-[var(--color-secondary)] mr-2"></i> Allergies/sensitivities</li>
+                <li class="flex items-center"><i class="fas fa-brain text-[var(--color-secondary)] mr-2"></i> Mental health background</li>
+                <li class="flex items-center"><i class="fas fa-heartbeat text-[var(--color-secondary)] mr-2"></i> Cardiovascular health</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg mb-3 text-[var(--color-primary)]">Our Commitment</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-center"><i class="fas fa-lock text-[var(--color-secondary)] mr-2"></i> Medical confidentiality</li>
+                <li class="flex items-center"><i class="fas fa-user-shield text-[var(--color-secondary)] mr-2"></i> Data protection</li>
+                <li class="flex items-center"><i class="fas fa-file-medical-alt text-[var(--color-secondary)] mr-2"></i> Secure record-keeping</li>
+                <li class="flex items-center"><i class="fas fa-hand-holding-heart text-[var(--color-secondary)] mr-2"></i> Personalized care plans</li>
+                <li class="flex items-center"><i class="fas fa-certificate text-[var(--color-secondary)] mr-2"></i> Licensed supervision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 relative">
+    <div class="leaf-pattern"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-5">Contact Us</h2>
+        <div class="section-divider mb-8"></div>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+          Reach out to learn more about Botanic Blue or start your membership application.
+        </p>
+      </div>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg" placeholder="Your name">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg" placeholder="Your email">
+            </div>
+            <div>
+              <label for="interest" class="block text-sm font-medium text-gray-700 mb-1">I'm interested in</label>
+              <select id="interest" name="interest" class="w-full px-4 py-3 rounded-lg border border-gray-300">
+                <option value="">Select your interest</option>
+                <option value="membership">Membership Information</option>
+                <option value="locations">Location Details</option>
+                <option value="services">Entheogen Services</option>
+                <option value="research">Research Participation</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg" placeholder="Share your questions or interests"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn-primary w-full">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-[var(--color-dark)]">Connect With Us</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Email Us</h4>
+                <p class="text-gray-600">info@botanicblue.com</p>
+                <p class="text-gray-600">membership@botanicblue.com</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-[var(--color-secondary)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fas fa-phone text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Call Us</h4>
+                <p class="text-gray-600">+1 (888) BOTANICB</p>
+                <p class="text-gray-600">Mon–Fri: 9am–6pm</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-[var(--color-primary)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Headquarters</h4>
+                <p class="text-gray-600">2 Park Rd Crawley, 6009 WA Australia</p>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-gray-200">
+              <h4 class="font-semibold mb-4">Follow Our Journey</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
