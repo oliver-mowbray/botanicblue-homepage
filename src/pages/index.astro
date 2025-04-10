@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LeafIcon from '/src/icons/leaf.svg';
 ---
 <BaseLayout title="Botanic Blue">
   <!-- Hero Section -->
@@ -30,27 +31,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         <div class="card p-8 bg-white text-center">
           <div class="w-16 h-16 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-leaf text-white text-2xl"></i>
+			<LeafIcon class="text-white w-6 h-6" />
           </div>
           <h3 class="text-2xl font-semibold mb-3">Natural Wellbeing</h3>
           <p class="text-gray-600">Our ethically sourced entheogens promote healing and personal growth in safe, controlled environments.</p>
         </div>
         <div class="card p-8 bg-white text-center">
           <div class="w-16 h-16 bg-[var(--color-secondary)] rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-brain text-white text-2xl"></i>
+            <!-- <FontAwesomeIcon icon={faBrain} className="text-white text-2xl" /> -->
           </div>
           <h3 class="text-2xl font-semibold mb-3">Guided Experiences</h3>
           <p class="text-gray-600">Experienced practitioners and medical professionals ensure safe and transformative journeys.</p>
         </div>
         <div class="card p-8 bg-white text-center">
           <div class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-spa text-white text-2xl"></i>
+            <!-- <FontAwesomeIcon icon={faSpa} className="text-white text-2xl" /> -->
           </div>
           <h3 class="text-2xl font-semibold mb-3">Tranquil Settings</h3>
           <p class="text-gray-600">Our estate designs promote healing, from lush gardens to meditative spaces and circadian rhythm rooms.</p>
         </div>
       </div>
-      <div class="bg-[var(--color-dark)] text-white p-10 rounded-lg shadow-xl">
+      <div class="mission-section p-10 rounded-lg shadow-xl">
         <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
         <p class="text-lg mb-6">
           Botanic Blue aims to reconnect people with nature's wisdom through carefully selected entheogens that promote healing without addiction. We create spaces where personal growth and scientific exploration meet, offering alternatives to conventional pharmaceutical approaches to mental health.
@@ -125,21 +126,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center">
             <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-pen-nib text-white"></i>
+			  <!-- <FontAwesomeIcon icon={faPenNib} className="text-white" /> -->
             </div>
             <h4 class="font-semibold mb-2">Reflection Tools</h4>
             <p class="text-gray-600">Free writing implements for documenting insights during your experience.</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-users text-white"></i>
+			  <!-- <FontAwesomeIcon icon={faUsers} className="text-white" /> -->
             </div>
             <h4 class="font-semibold mb-2">Community Events</h4>
             <p class="text-gray-600">STEM gatherings and educational workshops at our larger estates.</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
-              <i class="fas fa-vr-cardboard text-white"></i>
+			  <!-- <FontAwesomeIcon icon={faVrCardboard} className="text-white" /> -->
             </div>
             <h4 class="font-semibold mb-2">AR Experiences</h4>
             <p class="text-gray-600">Cooperative augmented reality experiences available at select locations.</p>
@@ -162,38 +163,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         <div class="card bg-white overflow-hidden">
-          <div class="location-img" style="background-image: url('https://cdn.jsdelivr.net/gh/placeholder-image/garden/800x500')"></div>
+		  <div class="location-img" style="background-image: url('/images/garden.jpg')"></div>
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Winery-Style Estates</h3>
             <p class="text-gray-600 mb-4">Our largest locations offer the complete Botanic Blue experience—with extensive gardens, meditation spaces, and overnight accommodations.</p>
             <ul class="text-gray-600 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Full-service entheogen offerings</li>
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Overnight accommodations</li>
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> AR experiences and community events</li>
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Full-service entheogen offerings</li> -->
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Overnight accommodations</li> -->
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> AR experiences and community events</li> -->
             </ul>
           </div>
         </div>
         <div class="card bg-white overflow-hidden">
-          <div class="location-img" style="background-image: url('https://cdn.jsdelivr.net/gh/placeholder-image/cafe/800x500')"></div>
+		  <div class="location-img" style="background-image: url('/images/cafe.jpg')"></div>
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Café-Style Locations</h3>
             <p class="text-gray-600 mb-4">Intimate urban retreats offering select entheogenic experiences in cozy, plant-filled environments.</p>
             <ul class="text-gray-600 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Select entheogen menu</li>
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Urban accessibility</li>
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Ideal for shorter visits</li>
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Select entheogen menu</li> -->
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Urban accessibility</li> -->
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Ideal for shorter visits</li> -->
             </ul>
           </div>
         </div>
         <div class="card bg-white overflow-hidden">
-          <div class="location-img" style="background-image: url('https://cdn.jsdelivr.net/gh/placeholder-image/space/800x500')"></div>
+		  <div class="location-img" style="background-image: url('/images/space.jpg')"></div>
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Future Lunar Estate</h3>
             <p class="text-gray-600 mb-4">Our visionary project will create the ultimate Botanic Blue experience in a lunar setting, blending entheogens with space exploration.</p>
             <ul class="text-gray-600 space-y-2">
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Unique zero-gravity experiences</li>
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Experimental terraforming projects</li>
-              <li class="flex items-center"><i class="fas fa-check text-[var(--color-secondary)] mr-2"></i> Premium journey package</li>
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Unique zero-gravity experiences</li> -->
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Experimental terraforming projects</li> -->
+              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Premium journey package</li> -->
             </ul>
             <div class="mt-4">
               <span class="text-sm bg-[var(--color-accent)] text-[var(--color-dark)] px-3 py-1 rounded-full font-medium">Coming Soon</span>
@@ -226,28 +227,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <h3 class="text-2xl font-semibold mb-4 text-[var(--color-dark)]">Membership Benefits</h3>
               <ul class="space-y-4">
                 <li class="flex items-start">
-                  <i class="fas fa-leaf text-[var(--color-secondary)] mt-1 mr-3"></i>
+			      <!-- <FontAwesomeIcon icon={faLeaf} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
                   <div>
                     <h4 class="font-semibold">Access All Locations</h4>
                     <p class="text-gray-600">Visit any Botanic Blue facility worldwide with your membership.</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-user-md text-[var(--color-secondary)] mt-1 mr-3"></i>
+			      <!-- <FontAwesomeIcon icon={faUserMd} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
                   <div>
                     <h4 class="font-semibold">Personalized Consultations</h4>
                     <p class="text-gray-600">Work with our experts to tailor experiences to your needs and medical history.</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-calendar-alt text-[var(--color-secondary)] mt-1 mr-3"></i>
+			      <!-- <FontAwesomeIcon icon={faCalendarAlt} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
                   <div>
                     <h4 class="font-semibold">Priority Booking</h4>
                     <p class="text-gray-600">Reserve sessions and accommodations ahead of public release.</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-                  <i class="fas fa-flask text-[var(--color-secondary)] mt-1 mr-3"></i>
+			      <!-- <FontAwesomeIcon icon={faFlask} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
                   <div>
                     <h4 class="font-semibold">Research Participation</h4>
                     <p class="text-gray-600">Join groundbreaking research on the benefits of natural entheogens.</p>
@@ -302,21 +303,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div>
               <h4 class="font-semibold text-lg mb-3 text-[var(--color-primary)]">Required Information</h4>
               <ul class="space-y-2 text-gray-600">
-                <li class="flex items-center"><i class="fas fa-clipboard-list text-[var(--color-secondary)] mr-2"></i> Medical history</li>
-                <li class="flex items-center"><i class="fas fa-pills text-[var(--color-secondary)] mr-2"></i> Current medications</li>
-                <li class="flex items-center"><i class="fas fa-allergy text-[var(--color-secondary)] mr-2"></i> Allergies/sensitivities</li>
-                <li class="flex items-center"><i class="fas fa-brain text-[var(--color-secondary)] mr-2"></i> Mental health background</li>
-                <li class="flex items-center"><i class="fas fa-heartbeat text-[var(--color-secondary)] mr-2"></i> Cardiovascular health</li>
+				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faClipboardList} className="text-[var(--color-secondary)] mr-2" /> Medical history</li> -->
+				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faPills} className="text-[var(--color-secondary)] mr-2" /> Current medications</li> -->
+				<!-- <li class="flex items-center"><FontAwesomeIcon icon={faAllergies} className="text-[var(--color-secondary)] mr-2" /> Allergies/sensitivities</li> -->
+				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faBrain} className="text-[var(--color-secondary)] mr-2" /> Mental health background</li> -->
+				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faHeartbeat} className="text-[var(--color-secondary)] mr-2" /> Cardiovascular health</li> -->
               </ul>
             </div>
             <div>
               <h4 class="font-semibold text-lg mb-3 text-[var(--color-primary)]">Our Commitment</h4>
               <ul class="space-y-2 text-gray-600">
-                <li class="flex items-center"><i class="fas fa-lock text-[var(--color-secondary)] mr-2"></i> Medical confidentiality</li>
-                <li class="flex items-center"><i class="fas fa-user-shield text-[var(--color-secondary)] mr-2"></i> Data protection</li>
-                <li class="flex items-center"><i class="fas fa-file-medical-alt text-[var(--color-secondary)] mr-2"></i> Secure record-keeping</li>
-                <li class="flex items-center"><i class="fas fa-hand-holding-heart text-[var(--color-secondary)] mr-2"></i> Personalized care plans</li>
-                <li class="flex items-center"><i class="fas fa-certificate text-[var(--color-secondary)] mr-2"></i> Licensed supervision</li>
+                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faLock} className="text-[var(--color-secondary)] mr-2" /> Medical confidentiality</li> -->
+                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faUserShield} className="text-[var(--color-secondary)] mr-2" /> Data protection</li> -->
+                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faFileMedicalAlt} className="text-[var(--color-secondary)] mr-2" /> Secure record-keeping</li> -->
+                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faHandHoldingHeart} className="text-[var(--color-secondary)] mr-2" /> Personalised care plans</li> -->
+                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCertificate} className="text-[var(--color-secondary)] mr-2" /> Licensed supervision</li> -->
               </ul>
             </div>
           </div>
@@ -372,7 +373,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="space-y-6">
             <div class="flex items-start">
               <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-envelope text-white"></i>
+                <!-- <FontAwesomeIcon icon={faEnvelope} className="text-white" /> -->
               </div>
               <div>
                 <h4 class="font-semibold">Email Us</h4>
@@ -382,7 +383,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div class="flex items-start">
               <div class="w-12 h-12 bg-[var(--color-secondary)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-phone text-white"></i>
+                <!-- <FontAwesomeIcon icon={faPhone} className="text-white" /> -->
               </div>
               <div>
                 <h4 class="font-semibold">Call Us</h4>
@@ -392,7 +393,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div class="flex items-start">
               <div class="w-12 h-12 bg-[var(--color-primary)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-map-marker-alt text-white"></i>
+                <!-- <FontAwesomeIcon icon={faMapMarkerAlt} className="text-white" /> -->
               </div>
               <div>
                 <h4 class="font-semibold">Headquarters</h4>
