@@ -1,6 +1,32 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+import AtIcon from '/src/icons/at-sign.svg';
+import BathIcon from '/src/icons/bath.svg';
+import BeakerIcon from '/src/icons/beaker.svg';
+import BrainIcon from '/src/icons/brain.svg';
+import CalendarIcon from '/src/icons/calendar.svg';
+import CheckIcon from '/src/icons/check.svg';
+import CircleCheckIcon from '/src/icons/circle-check.svg';
+import ClipboardIcon from '/src/icons/clipboard.svg';
+import FacebookIcon from '/src/icons/facebook.svg';
+import FolderLockIcon from '/src/icons/folder-lock.svg';
+import HeadsetIcon from '/src/icons/headset.svg';
+import HeartHandshakeIcon from '/src/icons/heart-handshake.svg';
+import HeartPulseIcon from '/src/icons/heart-pulse.svg';
+import InstagramIcon from '/src/icons/instagram.svg';
 import LeafIcon from '/src/icons/leaf.svg';
+import LinkedInIcon from '/src/icons/linkedin.svg';
+import LockIcon from '/src/icons/lock.svg';
+import MapPinIcon from '/src/icons/map-pin.svg';
+import AllergiesIcon from '/src/icons/milk-off.svg';
+import PenIcon from '/src/icons/pen.svg';
+import PhoneIcon from '/src/icons/phone.svg';
+import PillIcon from '/src/icons/pill.svg';
+import ShieldIcon from '/src/icons/shield.svg';
+import TwitterIcon from '/src/icons/twitter.svg';
+import UserIcon from '/src/icons/user.svg';
+import UsersIcon from '/src/icons/users.svg';
 ---
 <BaseLayout title="Botanic Blue">
   <!-- Hero Section -->
@@ -31,21 +57,21 @@ import LeafIcon from '/src/icons/leaf.svg';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         <div class="card p-8 bg-white text-center">
           <div class="w-16 h-16 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-4">
-			<LeafIcon class="text-white w-6 h-6" />
+			<LeafIcon class="text-white text-2xl" />
           </div>
           <h3 class="text-2xl font-semibold mb-3">Natural Wellbeing</h3>
           <p class="text-gray-600">Our ethically sourced entheogens promote healing and personal growth in safe, controlled environments.</p>
         </div>
         <div class="card p-8 bg-white text-center">
           <div class="w-16 h-16 bg-[var(--color-secondary)] rounded-full flex items-center justify-center mx-auto mb-4">
-            <!-- <FontAwesomeIcon icon={faBrain} className="text-white text-2xl" /> -->
+			<BrainIcon class="text-white text-2xl" />
           </div>
           <h3 class="text-2xl font-semibold mb-3">Guided Experiences</h3>
           <p class="text-gray-600">Experienced practitioners and medical professionals ensure safe and transformative journeys.</p>
         </div>
         <div class="card p-8 bg-white text-center">
           <div class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mx-auto mb-4">
-            <!-- <FontAwesomeIcon icon={faSpa} className="text-white text-2xl" /> -->
+			<BathIcon class="text-white text-2xl" />
           </div>
           <h3 class="text-2xl font-semibold mb-3">Tranquil Settings</h3>
           <p class="text-gray-600">Our estate designs promote healing, from lush gardens to meditative spaces and circadian rhythm rooms.</p>
@@ -114,7 +140,6 @@ import LeafIcon from '/src/icons/leaf.svg';
               <p class="text-sm text-gray-500 mb-3">Euphoric | Meditative | Historical</p>
               <p class="text-gray-600">Used in ancient ceremonies, this subtle entheogen promotes a gentle euphoria and enhances meditative states.</p>
             </div>
-            <!-- Ayahuasca entry removed -->
             <div class="text-center mt-4">
               <p class="text-gray-600 italic">And many more carefully selected natural entheogens, all legally approved and administered under appropriate supervision.</p>
             </div>
@@ -126,21 +151,21 @@ import LeafIcon from '/src/icons/leaf.svg';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center">
             <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
-			  <!-- <FontAwesomeIcon icon={faPenNib} className="text-white" /> -->
+			  <PenIcon class="text-white" />
             </div>
             <h4 class="font-semibold mb-2">Reflection Tools</h4>
             <p class="text-gray-600">Free writing implements for documenting insights during your experience.</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
-			  <!-- <FontAwesomeIcon icon={faUsers} className="text-white" /> -->
+			  <UsersIcon class="text-white" />
             </div>
             <h4 class="font-semibold mb-2">Community Events</h4>
             <p class="text-gray-600">STEM gatherings and educational workshops at our larger estates.</p>
           </div>
           <div class="text-center">
             <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mx-auto mb-3">
-			  <!-- <FontAwesomeIcon icon={faVrCardboard} className="text-white" /> -->
+			  <HeadsetIcon class="text-white" />
             </div>
             <h4 class="font-semibold mb-2">AR Experiences</h4>
             <p class="text-gray-600">Cooperative augmented reality experiences available at select locations.</p>
@@ -168,9 +193,9 @@ import LeafIcon from '/src/icons/leaf.svg';
             <h3 class="text-2xl font-semibold mb-2">Winery-Style Estates</h3>
             <p class="text-gray-600 mb-4">Our largest locations offer the complete Botanic Blue experience—with extensive gardens, meditation spaces, and overnight accommodations.</p>
             <ul class="text-gray-600 space-y-2">
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Full-service entheogen offerings</li> -->
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Overnight accommodations</li> -->
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> AR experiences and community events</li> -->
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Full-service entheogen offerings</li>
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Overnight accommodations</li>
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> AR experiences and community events</li>
             </ul>
           </div>
         </div>
@@ -180,9 +205,9 @@ import LeafIcon from '/src/icons/leaf.svg';
             <h3 class="text-2xl font-semibold mb-2">Café-Style Locations</h3>
             <p class="text-gray-600 mb-4">Intimate urban retreats offering select entheogenic experiences in cozy, plant-filled environments.</p>
             <ul class="text-gray-600 space-y-2">
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Select entheogen menu</li> -->
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Urban accessibility</li> -->
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Ideal for shorter visits</li> -->
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Select entheogen menu</li>
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Urban accessibility</li>
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Ideal for shorter visits</li>
             </ul>
           </div>
         </div>
@@ -192,9 +217,9 @@ import LeafIcon from '/src/icons/leaf.svg';
             <h3 class="text-2xl font-semibold mb-2">Future Lunar Estate</h3>
             <p class="text-gray-600 mb-4">Our visionary project will create the ultimate Botanic Blue experience in a lunar setting, blending entheogens with space exploration.</p>
             <ul class="text-gray-600 space-y-2">
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Unique zero-gravity experiences</li> -->
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Experimental terraforming projects</li> -->
-              <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCheck} className="text-[var(--color-secondary)] mr-2" /> Premium journey package</li> -->
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Unique zero-gravity experiences</li>
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Experimental terraforming projects</li>
+              <li class="flex items-center"><CheckIcon className="text-[var(--color-secondary)] mr-2" /> Premium journey package</li>
             </ul>
             <div class="mt-4">
               <span class="text-sm bg-[var(--color-accent)] text-[var(--color-dark)] px-3 py-1 rounded-full font-medium">Coming Soon</span>
@@ -227,28 +252,28 @@ import LeafIcon from '/src/icons/leaf.svg';
               <h3 class="text-2xl font-semibold mb-4 text-[var(--color-dark)]">Membership Benefits</h3>
               <ul class="space-y-4">
                 <li class="flex items-start">
-			      <!-- <FontAwesomeIcon icon={faLeaf} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
+			      <LeafIcon className="text-[var(--color-secondary)] mt-1 mr-3" />
                   <div>
                     <h4 class="font-semibold">Access All Locations</h4>
                     <p class="text-gray-600">Visit any Botanic Blue facility worldwide with your membership.</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-			      <!-- <FontAwesomeIcon icon={faUserMd} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
+			      <UserIcon className="text-[var(--color-secondary)] mt-1 mr-3" />
                   <div>
                     <h4 class="font-semibold">Personalized Consultations</h4>
                     <p class="text-gray-600">Work with our experts to tailor experiences to your needs and medical history.</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-			      <!-- <FontAwesomeIcon icon={faCalendarAlt} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
+			      <CalendarIcon className="text-[var(--color-secondary)] mt-1 mr-3" />
                   <div>
                     <h4 class="font-semibold">Priority Booking</h4>
                     <p class="text-gray-600">Reserve sessions and accommodations ahead of public release.</p>
                   </div>
                 </li>
                 <li class="flex items-start">
-			      <!-- <FontAwesomeIcon icon={faFlask} className="text-[var(--color-secondary)] mt-1 mr-3" /> -->
+			      <BeakerIcon className="text-[var(--color-secondary)] mt-1 mr-3" />
                   <div>
                     <h4 class="font-semibold">Research Participation</h4>
                     <p class="text-gray-600">Join groundbreaking research on the benefits of natural entheogens.</p>
@@ -303,21 +328,21 @@ import LeafIcon from '/src/icons/leaf.svg';
             <div>
               <h4 class="font-semibold text-lg mb-3 text-[var(--color-primary)]">Required Information</h4>
               <ul class="space-y-2 text-gray-600">
-				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faClipboardList} className="text-[var(--color-secondary)] mr-2" /> Medical history</li> -->
-				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faPills} className="text-[var(--color-secondary)] mr-2" /> Current medications</li> -->
-				<!-- <li class="flex items-center"><FontAwesomeIcon icon={faAllergies} className="text-[var(--color-secondary)] mr-2" /> Allergies/sensitivities</li> -->
-				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faBrain} className="text-[var(--color-secondary)] mr-2" /> Mental health background</li> -->
-				<!--             <li class="flex items-center"><FontAwesomeIcon icon={faHeartbeat} className="text-[var(--color-secondary)] mr-2" /> Cardiovascular health</li> -->
+				<li class="flex items-center"><ClipboardIcon className="text-[var(--color-secondary)] mr-2" /> Medical history</li>
+				<li class="flex items-center"><PillIcon className="text-[var(--color-secondary)] mr-2" /> Current medications</li>
+				<li class="flex items-center"><AllergiesIcon className="text-[var(--color-secondary)] mr-2" /> Allergies/sensitivities</li>
+				<li class="flex items-center"><BrainIcon className="text-[var(--color-secondary)] mr-2" /> Mental health background</li>
+				<li class="flex items-center"><HeartPulseIcon className="text-[var(--color-secondary)] mr-2" /> Cardiovascular health</li>
               </ul>
             </div>
             <div>
               <h4 class="font-semibold text-lg mb-3 text-[var(--color-primary)]">Our Commitment</h4>
               <ul class="space-y-2 text-gray-600">
-                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faLock} className="text-[var(--color-secondary)] mr-2" /> Medical confidentiality</li> -->
-                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faUserShield} className="text-[var(--color-secondary)] mr-2" /> Data protection</li> -->
-                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faFileMedicalAlt} className="text-[var(--color-secondary)] mr-2" /> Secure record-keeping</li> -->
-                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faHandHoldingHeart} className="text-[var(--color-secondary)] mr-2" /> Personalised care plans</li> -->
-                <!-- <li class="flex items-center"><FontAwesomeIcon icon={faCertificate} className="text-[var(--color-secondary)] mr-2" /> Licensed supervision</li> -->
+                <li class="flex items-center"><LockIcon className="text-[var(--color-secondary)] mr-2" /> Medical confidentiality</li>
+                <li class="flex items-center"><ShieldIcon className="text-[var(--color-secondary)] mr-2" /> Data protection</li>
+                <li class="flex items-center"><FolderLockIcon className="text-[var(--color-secondary)] mr-2" /> Secure record-keeping</li>
+                <li class="flex items-center"><HeartHandshakeIcon className="text-[var(--color-secondary)] mr-2" /> Personalised care plans</li>
+                <li class="flex items-center"><CircleCheckIcon className="text-[var(--color-secondary)] mr-2" /> Licensed supervision</li>
               </ul>
             </div>
           </div>
@@ -373,7 +398,7 @@ import LeafIcon from '/src/icons/leaf.svg';
           <div class="space-y-6">
             <div class="flex items-start">
               <div class="w-12 h-12 bg-[var(--color-accent)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                <!-- <FontAwesomeIcon icon={faEnvelope} className="text-white" /> -->
+                <AtIcon className="text-white" />
               </div>
               <div>
                 <h4 class="font-semibold">Email Us</h4>
@@ -383,7 +408,7 @@ import LeafIcon from '/src/icons/leaf.svg';
             </div>
             <div class="flex items-start">
               <div class="w-12 h-12 bg-[var(--color-secondary)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                <!-- <FontAwesomeIcon icon={faPhone} className="text-white" /> -->
+                <PhoneIcon className="text-white" />
               </div>
               <div>
                 <h4 class="font-semibold">Call Us</h4>
@@ -393,7 +418,7 @@ import LeafIcon from '/src/icons/leaf.svg';
             </div>
             <div class="flex items-start">
               <div class="w-12 h-12 bg-[var(--color-primary)] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                <!-- <FontAwesomeIcon icon={faMapMarkerAlt} className="text-white" /> -->
+                <MapPinIcon className="text-white" />
               </div>
               <div>
                 <h4 class="font-semibold">Headquarters</h4>
@@ -404,16 +429,16 @@ import LeafIcon from '/src/icons/leaf.svg';
               <h4 class="font-semibold mb-4">Follow Our Journey</h4>
               <div class="flex space-x-4">
                 <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
-                  <i class="fab fa-instagram"></i>
+			      <InstagramIcon />
                 </a>
                 <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
-                  <i class="fab fa-twitter"></i>
+			      <TwitterIcon />
                 </a>
                 <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
-                  <i class="fab fa-facebook-f"></i>
+			      <FacebookIcon />
                 </a>
                 <a href="#" class="w-10 h-10 rounded-full bg-[var(--color-dark)] flex items-center justify-center text-white hover:bg-[var(--color-primary)] transition duration-300">
-                  <i class="fab fa-linkedin-in"></i>
+			      <LinkedInIcon />
                 </a>
               </div>
             </div>
