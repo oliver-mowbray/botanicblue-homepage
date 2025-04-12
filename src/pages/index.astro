@@ -1,6 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+import gardenImage from '../images/garden.png';
+import cafeImage from '../images/cafe.png';
+import natureImage from '../images/nature.png';
+import spaceImage from '../images/space.png';
+
 import AtIcon from '/src/icons/at-sign.svg';
 import BathIcon from '/src/icons/bath.svg';
 import BeakerIcon from '/src/icons/beaker.svg';
@@ -30,7 +35,7 @@ import UsersIcon from '/src/icons/users.svg';
 ---
 <BaseLayout title="Botanic Blue">
   <!-- Hero Section -->
-  <section class="hero-bg min-h-screen flex items-center pt-16">
+  <section class="hero-bg min-h-screen flex items-center pt-16" style={`background-image: url(${natureImage.src});`}>
     <div class="container mx-auto px-4 py-20 hero-content text-center">
       <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Natural Awakening</h1>
       <p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto">
@@ -185,7 +190,7 @@ import UsersIcon from '/src/icons/users.svg';
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         <div class="card bg-white overflow-hidden">
-		  <div class="location-img" style="background-image: url('/images/garden.jpg')"></div>
+		  <div class="location-img" style={`background-image: url(${gardenImage.src});`}></div>
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Winery-Style Estates</h3>
             <p class="text-gray-600 mb-4">Our largest locations offer the complete Botanic Blue experience—with extensive gardens, meditation spaces, and overnight accommodations.</p>
@@ -197,7 +202,7 @@ import UsersIcon from '/src/icons/users.svg';
           </div>
         </div>
         <div class="card bg-white overflow-hidden">
-		  <div class="location-img" style="background-image: url('/images/cafe.jpg')"></div>
+		  <div class="location-img" style={`background-image: url(${cafeImage.src});`}></div>
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Café-Style Locations</h3>
             <p class="text-gray-600 mb-4">Intimate urban retreats offering select entheogenic experiences in cozy, plant-filled environments.</p>
@@ -209,7 +214,7 @@ import UsersIcon from '/src/icons/users.svg';
           </div>
         </div>
         <div class="card bg-white overflow-hidden">
-		  <div class="location-img" style="background-image: url('/images/space.jpg')"></div>
+		  <div class="location-img" style={`background-image: url(${cafeImage.src});`}></div>
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Future Lunar Estate</h3>
             <p class="text-gray-600 mb-4">Our visionary project will create the ultimate Botanic Blue experience in a lunar setting, blending entheogens with space exploration.</p>

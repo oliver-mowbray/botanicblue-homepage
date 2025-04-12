@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 const { title } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -9,7 +10,6 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title ? `${title} - Botanic Blue` : 'Botanic Blue'}</title>
-    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
     <Header />
